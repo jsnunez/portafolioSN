@@ -182,11 +182,37 @@ h5{
   flex-direction: row;
   justify-content: center;
   background-repeat: no-repeat;
+  animation: growLogo 2s ease-out forwards, colorChange 2s ease-out forwards;
+}
+
+@keyframes growLogo {
+  0% {
+    transform: scale(0.5); /* Empieza en la mitad del tamaño original */
+    opacity: 0; /* Opción adicional: hacer que sea transparente al inicio */
+  }
+  100% {
+    transform: scale(1); /* Llega al tamaño original */
+    opacity: 1; /* Opcional: hacer que sea completamente visible */
+  }
+}
+
+@keyframes colorChange {
+  0% {
+    filter: invert(0.4) sepia(1) hue-rotate(20deg) saturate(1000%);
 
   }
-  .imglogo{
-    height: 50vh;
+  100% {
+    filter: none; /* Restablece el logo a su color original */
   }
+}
+
+.imglogo {
+  height: 50vh;
+}
+
+
+
+
 
 .nav-menu a:hover:before, .nav-menu li:hover > a:before, .nav-menu .active > a:before {
   visibility: visible;
