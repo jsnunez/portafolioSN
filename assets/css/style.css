@@ -18,7 +18,7 @@ body {
 body::before {
   content: "";
   position: fixed;
-  background: #010e1b;
+  background: #08202e;
   background-size: cover;
   left: 0;
   right: 0;
@@ -33,18 +33,20 @@ body::before {
 }
 
 a {
-  color: #12d640;
+  color: #ffca08;
 }
 
 a:hover {
-  color: #12d640;
+  color: #ffca08;
   text-decoration: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
-
+h5{
+  color: #ffca08;
+}
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -80,7 +82,7 @@ h1, h2, h3, h4, h5, h6 {
 #header h2 {
   font-size: 24px;
   margin-top: 20px;
-  color: #12d640;
+  color: #ffca08;
 }
 
 #header h2 span {
@@ -114,7 +116,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .social-links a:hover {
-  background: #1c7d32;
+  background: #957916;
 }
 
 @media (max-width: 992px) {
@@ -179,7 +181,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-direction: row;
   justify-content: center;
-
+  background-repeat: no-repeat;
 
   }
   .imglogo{
@@ -286,7 +288,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   top: 0;
   right: 0;
-  background: #09203a;
+  background: #0f3259;
 }
 
 #header.header-top .social-links, #header.header-top h2 {
@@ -501,7 +503,7 @@ height:28vh ;
   display: flex;
   align-items: center;
   padding: 20px;
-  background: #09203a;
+  background: #0f3259;
   transition: ease-in-out 0.3s;
 }
 
@@ -674,7 +676,7 @@ height:28vh ;
 --------------------------------------------------------------*/
 .services .icon-box {
   text-align: center;
-  background: #09203a;
+  background: #0f3259;
   padding: 40px 40px;
   transition: all ease-in-out 0.3s;
   margin: 10px
