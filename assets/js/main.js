@@ -150,3 +150,22 @@
   });
 
 })(jQuery);
+
+// script.js
+const video = document.getElementById('movingVideo');
+
+function moveVideo() {
+    const maxX = window.innerWidth - video.clientWidth;
+    const maxY = window.innerHeight - video.clientHeight;
+    
+    const randomX = Math.random() * maxX;
+    const randomY = Math.random() * maxY;
+
+    video.style.transform = `translate(${randomX}px, ${randomY}px)`;
+
+    // Cambiar la posición cada 2 segundos (2000 ms)
+    setTimeout(moveVideo, 2000);
+}
+
+// Iniciar el movimiento
+moveVideo();
