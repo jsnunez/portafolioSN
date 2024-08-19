@@ -152,20 +152,14 @@
 })(jQuery);
 
 // script.js
-const video = document.getElementById('movingVideo');
 
-function moveVideo() {
-    const maxX = window.innerWidth - video.clientWidth;
-    const maxY = window.innerHeight - video.clientHeight;
-    
-    const randomX = Math.random() * maxX;
-    const randomY = Math.random() * maxY;
 
-    video.style.transform = `translate(${randomX}px, ${randomY}px)`;
+// document.addEventListener('mousemove', function(e) {
+//   let gradient = document.getElementById('gradient');
+//   let x = e.clientX;
+//   let y = e.clientY;
+  
+//   // Ajusta el tamaño del gradiente
+//   gradient.style.background = `radial-gradient(circle at ${x}px ${y}px, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0) 10vh)`;
+// });
 
-    // Cambiar la posición cada 2 segundos (2000 ms)
-    setTimeout(moveVideo, 2000);
-}
-
-// Iniciar el movimiento
-moveVideo();
